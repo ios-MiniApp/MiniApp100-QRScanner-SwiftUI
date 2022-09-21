@@ -11,6 +11,11 @@
 		871BF62728DA96F7000BDEF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871BF62628DA96F7000BDEF4 /* ContentView.swift */; };
 		871BF62928DA96F8000BDEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871BF62828DA96F8000BDEF4 /* Assets.xcassets */; };
 		871BF62C28DA96F8000BDEF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871BF62B28DA96F8000BDEF4 /* Preview Assets.xcassets */; };
+		871BF63328DA9735000BDEF4 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871BF63228DA9735000BDEF4 /* QRView.swift */; };
+		871BF63628DA974B000BDEF4 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871BF63428DA974B000BDEF4 /* QRViewController.swift */; };
+		871BF63728DA974B000BDEF4 /* QRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 871BF63528DA974B000BDEF4 /* QRViewController.xib */; };
+		871BF63B28DA97A0000BDEF4 /* QRScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 871BF63A28DA97A0000BDEF4 /* QRScanner */; };
+		871BF63D28DA995D000BDEF4 /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871BF63C28DA995D000BDEF4 /* FlashButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		871BF62628DA96F7000BDEF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		871BF62828DA96F8000BDEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		871BF62B28DA96F8000BDEF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		871BF63228DA9735000BDEF4 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
+		871BF63428DA974B000BDEF4 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		871BF63528DA974B000BDEF4 /* QRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRViewController.xib; sourceTree = "<group>"; };
+		871BF63C28DA995D000BDEF4 /* FlashButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashButton.swift; sourceTree = "<group>"; };
+		87CFD3E428DA9AC000DC9F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871BF63B28DA97A0000BDEF4 /* QRScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,10 @@
 		871BF62328DA96F7000BDEF4 /* MiniApp100-QRScanner-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				87CFD3E428DA9AC000DC9F11 /* Info.plist */,
 				871BF62428DA96F7000BDEF4 /* MiniApp100_QRScanner_SwiftUIApp.swift */,
 				871BF62628DA96F7000BDEF4 /* ContentView.swift */,
+				871BF63828DA9751000BDEF4 /* QRView */,
 				871BF62828DA96F8000BDEF4 /* Assets.xcassets */,
 				871BF62A28DA96F8000BDEF4 /* Preview Content */,
 			);
@@ -65,6 +78,17 @@
 				871BF62B28DA96F8000BDEF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		871BF63828DA9751000BDEF4 /* QRView */ = {
+			isa = PBXGroup;
+			children = (
+				871BF63228DA9735000BDEF4 /* QRView.swift */,
+				871BF63428DA974B000BDEF4 /* QRViewController.swift */,
+				871BF63528DA974B000BDEF4 /* QRViewController.xib */,
+				871BF63C28DA995D000BDEF4 /* FlashButton.swift */,
+			);
+			path = QRView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = "MiniApp100-QRScanner-SwiftUI";
+			packageProductDependencies = (
+				871BF63A28DA97A0000BDEF4 /* QRScanner */,
+			);
 			productName = "MiniApp100-QRScanner-SwiftUI";
 			productReference = 871BF62128DA96F7000BDEF4 /* MiniApp100-QRScanner-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 871BF61828DA96F7000BDEF4;
+			packageReferences = (
+				871BF63928DA97A0000BDEF4 /* XCRemoteSwiftPackageReference "QRScanner" */,
+			);
 			productRefGroup = 871BF62228DA96F7000BDEF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				871BF62C28DA96F8000BDEF4 /* Preview Assets.xcassets in Resources */,
+				871BF63728DA974B000BDEF4 /* QRViewController.xib in Resources */,
 				871BF62928DA96F8000BDEF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				871BF62728DA96F7000BDEF4 /* ContentView.swift in Sources */,
+				871BF63D28DA995D000BDEF4 /* FlashButton.swift in Sources */,
+				871BF63328DA9735000BDEF4 /* QRView.swift in Sources */,
 				871BF62528DA96F7000BDEF4 /* MiniApp100_QRScanner_SwiftUIApp.swift in Sources */,
+				871BF63628DA974B000BDEF4 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +304,14 @@
 				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MiniApp100-QRScanner-SwiftUI/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QRスキャンのためにカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +336,14 @@
 				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MiniApp100-QRScanner-SwiftUI/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QRスキャンのためにカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		871BF63928DA97A0000BDEF4 /* XCRemoteSwiftPackageReference "QRScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mercari/QRScanner";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		871BF63A28DA97A0000BDEF4 /* QRScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 871BF63928DA97A0000BDEF4 /* XCRemoteSwiftPackageReference "QRScanner" */;
+			productName = QRScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 871BF61928DA96F7000BDEF4 /* Project object */;
 }
